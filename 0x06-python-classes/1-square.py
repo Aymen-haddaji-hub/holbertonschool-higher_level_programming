@@ -1,6 +1,15 @@
-#!/user/bin/python3
+#!/usr/bin/python3
+"""
+This is the Square module.
+"""
+
+
 class Square:
-    """our class"""
+    """
+    the Square class
+    """
     def __init__(self, size):
-        """the init method"""
+        """
+        The __init__ method
+        """
         self.__size = size
