@@ -15,5 +15,6 @@ if __name__ == '__main__':
         data = requests.post(url, data=mail_adress)
         print(data.text)
     except Exception:
-        if not argv[1] or argv[2]
-        pass
+        if not argv[1] or argv[2]:
+            pass
+        
