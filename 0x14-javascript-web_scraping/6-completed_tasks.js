@@ -5,10 +5,10 @@ request(process.argv[2], function (error, response, body) {
     console.log(error);
   } else {
     const todos = JSON.parse(body);
-    const completed = {};
-    for (const completed of todos) {
-      if (todos.completed === true) {
-        if (todos.userId in completed) { completed[completed.userId]++; } else { completed[completed.userId] = 1; }
+    const completed = {x
+    for (const x of todos) {
+      if (x.completed === true) {
+        if (x.userId in completed) { completed[x.userId]++; } else { completed[x.userId] = 1; }
       }
     }
     console.log(completed);
