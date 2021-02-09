@@ -1,0 +1,15 @@
+#!/usr/bin/node
+const fs = require('fs');
+const request = require('request');
+const adress = process.argv[2];
+request(adress, function (error, adress, body) {
+  if (error) {
+    console.log(error);
+  } else {
+    fs.writeFile(process.argv[3], body, 'utf-8', (error) => {
+      if (error) {
+        console.log(error);
+      }
+    });
+  }
+});
